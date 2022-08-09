@@ -24,6 +24,7 @@ Line that needs to be edited : rfid.PCD_SetRegisterBitMask(rfid.RFCfgReg, (0x03<
 
 The HEX 0x03 control the gain. In my case that was the value that would penetrate the wooden bezel and the glass at the perfect distance. You may need to adjust this value set the receiver's gain to your desired level
 
+ | Gain Values in HEX |
  |---|
  | 0x01 = 23 dB HEX |
  | 0x02 = 18 dB HEX | 
