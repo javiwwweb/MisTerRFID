@@ -18,7 +18,21 @@ Enables RFID card launching of games for MiSTer FPGA. Launches games without any
 |VCC|3.3V|
 |GRD|GRD|
 
-Write the misterrfid.ino file to your Arduino. On your computer, attach the serial monitor to your Arduino and you should see it repeating `. rfid_process.sh noscan` about every second. As soon as your scan a RFID card, it should output `. rfid_process.sh 12345678`. The number is that card's unique ID. The reader will not scan the same card two times in a row. Make note of the card's unique id.
+The first step is to write the misterrfid.ino file to your Arduino. If you find out that that you would like to extend the distance the card is picked up,  You can adjust the receiver gain by editing the following line of the misterrfid.ino before writing it:
+
+Line that needs to be edited : rfid.PCD_SetRegisterBitMask(rfid.RFCfgReg, (0x03<<4));
+
+The HEX 0x03 control the gain. In my case that was the value that would penetrate the wooden bezel and the glass at the perfect distance. You may need to adjust this value set the receiver's gain to your desired level
+
+ 0x01 = 23 dB HEX
+ 0x02 = 18 dB HEX 
+ 0x03 = 23 dB HEX
+ 0x04 = 33 dB HEX
+ 0x05 = 38 dB HEX
+ 0x06 = 43 dB HEX
+ 0x07 = 48 dB HEX
+
+On your computer, attach the serial monitor to your Arduino and you should see it repeating `. rfid_process.sh noscan` about every second. As soon as your scan a RFID card, it should output `. rfid_process.sh 12345678`. The number is that card's unique ID. The reader will not scan the same card two times in a row. Make note of the card's unique id.
 
 ## MiSTer Setup
 Copy the files to your MiSTer SD card based on the structure of this repo. Edit case statement of the "rfid_process.sh" script to associate your RFID card UIDs with the roms files on your MiSTer. (Sample cores and UID's are provided in the file)
