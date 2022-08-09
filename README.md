@@ -24,13 +24,13 @@ Line that needs to be edited : rfid.PCD_SetRegisterBitMask(rfid.RFCfgReg, (0x03<
 
 The HEX 0x03 control the gain. In my case that was the value that would penetrate the wooden bezel and the glass at the perfect distance. You may need to adjust this value set the receiver's gain to your desired level
 
- 0x01 = 23 dB HEX
- 0x02 = 18 dB HEX 
- 0x03 = 23 dB HEX
- 0x04 = 33 dB HEX
- 0x05 = 38 dB HEX
- 0x06 = 43 dB HEX
- 0x07 = 48 dB HEX
+ |0x01 = 23 dB HEX|
+ |0x02 = 18 dB HEX| 
+ |0x03 = 23 dB HEX|
+ |0x04 = 33 dB HEX|
+ |0x05 = 38 dB HEX|
+ |0x06 = 43 dB HEX|
+ |0x07 = 48 dB HEX|
 
 On your computer, attach the serial monitor to your Arduino and you should see it repeating `. rfid_process.sh noscan` about every second. As soon as your scan a RFID card, it should output `. rfid_process.sh 12345678`. The number is that card's unique ID. The reader will not scan the same card two times in a row. Make note of the card's unique id.
 
