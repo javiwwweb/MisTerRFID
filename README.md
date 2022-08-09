@@ -1,4 +1,4 @@
-# snesRFID
+# MisTerRFID
 Enables RFID card launching of games for MiSTer FPGA. Launches games without any menu being display using the MiSTer Game Launcher files (MGL) method. Must use a version of MiSTer from Feb 24, 2022 or after to support this method of launching. I have confirmed this working with the Atari 2600, NES, and SNES cores.
 
 ## Hardware Needed
@@ -13,6 +13,7 @@ Enables RFID card launching of games for MiSTer FPGA. Launches games without any
 |RST|D9|
 |SDA|D10|
 |MOSI|D11|
+|MISO|D12|
 |SCK|D13|
 |VCC|3.3V|
 |GRD|GRD|
