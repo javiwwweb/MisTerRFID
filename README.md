@@ -31,3 +31,5 @@ Note: This can be combined with MisTer.ini option bootcore= to automatically lau
 ### Disclaimer
 I'm not a Linux or a hardware guy -- there are probably many better approaches to the ones I have taken.
 
+### THANK YOU
+A word of Thanks to illusion-pasture-program from all of this code. I just adapted it to work inside an Arcade cabinet to my liking! 
