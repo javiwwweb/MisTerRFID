@@ -45,7 +45,7 @@ After editing the rfid_process.sh script, turn off your MiSTer. Plug your Arduin
 Note: This can be combined with MisTer.ini option bootcore= to automatically launch an arcade core (MRA file) upon starting up your MisTer. The rfid_process.sh will run in the background waiting for a card to be presented.  
 
 ### Disclaimer
-I'm not a Linux or a hardware guy -- there are probably many better approaches to the ones I have taken.
+I'm not a Programmer, but the code works for me.
 
 ### THANK YOU
 A word of Thanks to illusion-pasture-program from all of this code. I just adapted it to work inside an Arcade cabinet to my liking! 
