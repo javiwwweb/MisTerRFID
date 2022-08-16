@@ -1,6 +1,9 @@
 Forked from: [javiwwweb/MisTerRFID](https://github.com/javiwwweb/MisTerRFID)
+
 I replaced the big switch-case statement with a config file. This could pave the way to a more efficient way of managing the bank of RFID-game list.
+
 Note: I didn't fork https://github.com/ElRojo/MisTerRFID because it searches for the switch-case code, but it would be nice to make it evolve to just add the new RFID into the config file.
+
 CAUTION: I couldn't test the new code on a real MisTer because I don't own the RFID hardware needed. I just tested the code on a Linux machine to verify it tries to run the good rom.
 I'd like to submit this new code to the original repository to have it tested then integrated into the repository of javiwwweb.
 
