@@ -16,6 +16,7 @@ qload_rom()
     fi    
 }
 
+unset gamefound
 while read -r line
 do
 	#echo "$line"
@@ -25,10 +26,17 @@ do
 	if [ "x$rfid" == "x$1" ]
 	then
 		#echo "RFID $rfid found in $line"
+		gamefound=$game
 		break
 	fi
-done <games_rfid.conf
+done </media/fat/Scripts/games_rfid.conf
 
-echo "Running $game"
-eval $game
+if [ "x$gamefound" == "x" ]
+then
+	echo "RFID tag not found into config file..."
+	return
+fi
+
+echo "Running: $gamefound"
+eval $gamefound
 
