@@ -1,3 +1,5 @@
+DEPRECATED: the config file feature was ported to [ElRojo/MiSTerRFID](https://github.com/ElRojo/MisTerRFID)
+---
 Forked from: [javiwwweb/MisTerRFID](https://github.com/javiwwweb/MisTerRFID)
 
 I replaced the big switch-case statement with a config file. This could pave the way to a more efficient way of managing the bank of RFID-game list.
